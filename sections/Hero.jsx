@@ -6,7 +6,7 @@ import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16-pl-6`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     <motion.div
     variants={staggerContainer}
     initial="hidden"
@@ -17,7 +17,7 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h1 variants={textVariant(1.1)}
         className={styles.heroHeading}>
-         MetaVerse
+         Metaverse
         </motion.h1>
         <motion.div
         variants={textVariant(1.2)}
@@ -35,7 +35,7 @@ const Hero = () => (
       className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px]
-        hero-gradient rounded-tl-[140px] z-[0] -top-[30px]">
+        hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
           <img
           src="/cover.png"
           alt="cover"
@@ -51,8 +51,6 @@ const Hero = () => (
 
           </div>
           </a> 
-
-        </div>
 
       </motion.div>
     </motion.div>
